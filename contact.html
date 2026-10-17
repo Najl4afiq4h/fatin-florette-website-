@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Fatin's Florette</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header */
+        header {
+            background-color: #6b1c3e;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+        }
+        header .logo img { height: 40px; }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 12px;
+            letter-spacing: 1px;
+        }
+
+        /* Main Background */
+        .page-bg {
+            background-color: #f4dede;
+            padding: 40px;
+        }
+
+        .page-title {
+            text-align: center;
+            color: #333;
+            margin-bottom: 40px;
+            font-size: 24px;
+            letter-spacing: 1px;
+        }
+
+        /* Get In Touch Section */
+        .contact-top {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        /* Left Side: Image */
+        .contact-image {
+            width: 400px;
+            height: 400px;
+            border-radius: 50%; /* Makes the image round */
+            overflow: hidden;
+            border: 10px solid #e8c9c9;
+        }
+        .contact-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Right Side: Form */
+        .contact-form-container {
+            width: 400px;
+            text-align: center;
+        }
+        .contact-form-container h3 {
+            margin-bottom: 20px;
+            font-weight: normal;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .name-row {
+            display: flex;
+            gap: 15px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            background-color: white;
+            font-family: Arial, sans-serif;
+        }
+        textarea { height: 120px; resize: none; }
+        button {
+            background-color: #6b1c3e;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        /* Contact Info Row */
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 80px;
+            padding: 30px 0;
+            border-top: 1px solid #333;
+            border-bottom: 1px solid #333;
+            margin-bottom: 60px;
+        }
+        .info-block h4 {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .info-block p {
+            font-size: 12px;
+            color: #555;
+        }
+
+        /* FAQ Section */
+        .faq-banner {
+            background-image: url('faq.png');
+            background-size: cover;
+            background-position: center;
+            padding: 60px 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .faq-banner p { font-size: 14px; letter-spacing: 2px; color: #333;}
+        .faq-banner h2 { font-size: 24px; margin-bottom: 40px; color: #333;}
+
+        /* FAQ Dropdowns */
+        .faq-list {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        details {
+            background-color: #e3c3c3;
+            padding: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: left;
+        }
+        summary {
+            font-size: 14px;
+            color: #333;
+            list-style: none; /* Hides default arrow */
+            display: flex;
+            justify-content: space-between;
+        }
+        summary::after {
+            content: "▼"; /* Custom arrow */
+            font-size: 10px;
+        }
+        details p {
+            margin-top: 15px;
+            font-size: 13px;
+            color: #555;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #d1c2c4;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #555;
+        }
+        .footer-icons img { width: 24px; height: 24px; margin-right: 15px; cursor: pointer; }
+        .footer-map img { width: 100px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+
+    <!-- 1. Header -->
+    <header>
+        <div class="logo"><img src="logo.png" alt="Logo"></div>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT US</a>
+            <a href="#">CATALOG</a>
+            <a href="#">OCCASION</a>
+            <a href="#">SUBSCRIPTION</a>
+            <a href="contact.html">CONTACT US</a>
+            <a href="#">🛒</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="page-bg">
+        <h2 class="page-title">CONTACT US</h2>
+
+        <!-- 2. Get In Touch (Image + Form) -->
+        <div class="contact-top">
+            <div class="contact-image">
+                <img src="contact.png" alt="Flowers">
+            </div>
+
+            <div class="contact-form-container">
+                <h3>Get In Touch</h3>
+                <form>
+                    <div class="name-row">
+                        <input type="text" placeholder="First Name">
+                        <input type="text" placeholder="Last Name">
+                    </div>
+                    <input type="tel" placeholder="Phone Number">
+                    <textarea placeholder="Message"></textarea>
+                    <button type="button">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- 3. Contact Info -->
+        <div class="contact-info">
+            <div class="info-block">
+                <h4>PHONE</h4>
+                <p>+673 863 3134</p>
+            </div>
+            <div class="info-block">
+                <h4>ADDRESS</h4>
+                <p>No. 5, Spg 66-88-13, Kampong<br>Bengkurog BF1920, Brunei</p>
+            </div>
+            <div class="info-block">
+                <h4>Email</h4>
+                <p>fatinfth@gmail.com</p>
+            </div>
+        </div>
+
+        <!-- 4. FAQ Section -->
+        <div class="faq-banner">
+            <p>FAQS</p>
+            <h2>EVERYTHING YOU NEED TO KNOW</h2>
+
+            <div class="faq-list">
+                <!-- Using <details> and <summary> creates a clickable dropdown automatically! -->
+                <details>
+                    <summary>How far in advance should I order?</summary>
+                    <p> 1-3 days before, same day order may subject to flowers availability.</p>
+                </details>
+                <details>
+                    <summary>Can I customise my bouquet?</summary>
+                    <p>Yes, definitely can. Just send in your budget, theme colour, type of flower.</p>
+                </details>
+                <details>
+                    <summary>Can I request a specific delivery time?</summary>
+                    <p>Yes, can. You may inform us early and we will let the runners know.</p>
+                </details>
+                <details>
+                    <summary>Can I include a personalised message card?</summary>
+                    <p>Yes, can. Printed card message is BND2 (no word limit). 
+Handwritten card is Free Of Charge.</p>
+                </details>
+                <details>
+                    <summary>What is your cancellation or refund policy?</summary>
+                    <p>• Please contact Fatin’s Florette as soon as possible if you wish to cancel your order.
+• Cancellations made before flower preparation begins may be considered for a refund, subject to any costs already incurred.
+• Once flower preparation or customisation has begun, cancellations may not be eligible for a full refund.</p>
+                </details>
+                <details>
+                    <summary>Important Notes</summary>
+                    <p>• Refunds are not guaranteed for changes of mind, incorrect order details supplied by customers, or natural variations in fresh flowers.
+• This policy does not limit any consumer rights that may apply under Brunei Darussalam law.</p>
+                </details>
+            </div>
+        </div>
+    </div>
+
+    <!-- 5. Footer -->
+    <footer>
+        <div class="footer-icons">
+            <a href="#"><img src="ig.png" alt="Instagram"></a>
+            <a href="#"><img src="tt.png" alt="TikTok"></a>
+            <a href="#"><img src="wa.png" alt="WhatsApp"></a>
+        </div>
+        <div class="footer-map">
+            <img src="map.png" alt="Location Map">
+        </div>
+    </footer>
+
+</body>
+</html>
